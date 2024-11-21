@@ -601,3 +601,19 @@ INSERT INTO Advertiser (company)
 VALUES ('Hall-Dennis');
 INSERT INTO Advertiser (company)
 VALUES ('company:varchar');
+
+INSERT INTO ListeningStats (userID, mediaID, duration)
+SELECT userID, mediaID, duration + 10
+FROM ListeningStats
+WHERE duration < 30;
+
+INSERT INTO Artist (artistName, totalDurationListenedTo,
+VALUES ('ZAho', 58499,473875, 'zaho@example.com', 'jbfjfdf' )
+ON DUPLICATE KEY UPDATE
+artistName = 'Zaho2';
+revenueGenerated, email, password)
+
+INSERT INTO artist
+SELECT *
+FROM EventCalendar
+WHERE eventData > CURDATE();
